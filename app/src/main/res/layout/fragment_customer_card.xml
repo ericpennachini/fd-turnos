@@ -13,70 +13,82 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:background="@color/white"
         android:elevation="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/customer_card_date_selector"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
+            <TextView
+                android:id="@+id/customer_card_current_day"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toStartOf="@id/toggle_change_date"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Hoy" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggle_change_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/customer_card_current_day"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:id="@+id/customer_card_current_day"
-                    style="@style/TextAppearance.AppCompat.Medium"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="8dp"
-                    android:gravity="center_vertical"
-                    app:layout_constraintEnd_toStartOf="@id/toggle_change_date"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:text="Hoy" />
-
-                <com.google.android.material.button.MaterialButtonToggleGroup
-                    android:id="@+id/toggle_change_date"
+                <Button
+                    android:id="@+id/toggle_button_prev_day"
+                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/customer_card_current_day"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:icon="@drawable/ic_previous"
+                    app:iconTint="@color/colorPrimary"/>
 
-                    <Button
-                        android:id="@+id/toggle_button_prev_day"
-                        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        app:icon="@drawable/ic_previous" />
+                <Button
+                    android:id="@+id/toggle_button_next_day"
+                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:icon="@drawable/ic_next"
+                    app:iconTint="@color/colorPrimary"/>
 
-                    <Button
-                        android:id="@+id/toggle_button_next_day"
-                        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        app:icon="@drawable/ic_next" />
-
-                </com.google.android.material.button.MaterialButtonToggleGroup>
+            </com.google.android.material.button.MaterialButtonToggleGroup>
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
             <!-- TODO: item de próximo turno -->
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <!-- TODO: lista de items de siguientes turnos -->
+            <ar.com.fashiondog.presentation.components.nextsession.NextSessionComponent
+                android:id="@+id/customer_card_next_session_component"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/customer_card_folowing_sessions"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/customer_card_next_session_component"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- TODO: lista de items de siguientes turnos -->
 
     </com.google.android.material.card.MaterialCardView>
 
