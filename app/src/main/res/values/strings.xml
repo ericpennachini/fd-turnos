@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FashionDog</string>
+
+    <string name="home_customers_button_text">Clientes</string>
+    <string name="home_services_button_text">Servicios</string>
+
+    <string name="customer_card_details_button">Ver todas las sesiones</string>
 </resources>

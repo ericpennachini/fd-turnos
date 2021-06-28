@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "787872909202",
+    "firebase_url": "https://fashiondog-app.firebaseio.com",
+    "project_id": "fashiondog-app",
+    "storage_bucket": "fashiondog-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787872909202:android:4d4fbc05b88709c6efe34b",
+        "android_client_info": {
+          "package_name": "ar.com.fashiondog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787872909202-qt3pfvibv8d1r1grqouodo9ogmjcag1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1UEe_IqDzqH5l4LqCMTPRdn6HqULwb4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787872909202-qt3pfvibv8d1r1grqouodo9ogmjcag1r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,14 +5,6 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools">
 
-<!--    <TextView-->
-<!--        android:id="@+id/next_session_customer_name"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
     <LinearLayout
         android:id="@+id/next_session_customer_info"
         android:orientation="vertical"
@@ -57,6 +49,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/next_session_customer_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/next_session_customer_info"
+        app:strokeColor="@color/colorPrimary"
         tools:text="Detalles" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
