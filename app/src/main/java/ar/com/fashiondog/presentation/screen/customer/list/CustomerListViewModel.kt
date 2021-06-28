@@ -1,4 +1,4 @@
-package ar.com.fashiondog.presentation.screen.customerlist
+package ar.com.fashiondog.presentation.screen.customer.list
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

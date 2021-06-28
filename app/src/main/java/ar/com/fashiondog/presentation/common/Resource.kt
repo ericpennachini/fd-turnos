@@ -3,5 +3,5 @@ package ar.com.fashiondog.presentation.common
 sealed class Resource<T>(val data: T? = null, val message: String? = null) {
     class Loading<T> : Resource<T>()
     class Success<T>(data: T) : Resource<T>(data)
-    class Error<T>(val exception: Exception) : Resource<T>(message = exception.message)
+    class Error<T>(private val exception: Exception) : Resource<T>(message = exception.message)
 }

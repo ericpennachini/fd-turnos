@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FashionDog.iml" filepath="$PROJECT_DIR$/.idea/modules/FashionDog.iml" group="FashionDog" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="FashionDog/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FashionDog.iml" filepath="$PROJECT_DIR$/.idea/modules/FashionDog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FashionDog.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FashionDog.app.iml" />
     </modules>
   </component>
 </project>

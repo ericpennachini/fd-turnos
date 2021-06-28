@@ -1,4 +1,4 @@
-package ar.com.fashiondog.presentation.screen.customerlist
+package ar.com.fashiondog.presentation.screen.customer.list
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

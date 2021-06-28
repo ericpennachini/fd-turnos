@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.screen.home.HomeActivity">
+    tools:context=".presentation.screen.home.HomeActivity"
+    android:id="@+id/home_main_container">
 
     <ScrollView
         android:layout_width="match_parent"
